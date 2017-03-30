@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página con script</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+	  function cambiarrojo() {
+	  	var p;
+	  	p = document.getElementById("miNoticia");
+	  	p.style.backgroundColor= "red";
+	  }
+
+	   function cambiarverde() {
+	  	var p;
+	  	p = document.getElementById("miNoticia");
+	  	p.style.backgroundColor ="green";
+	  }
+
+
+	  	/*function cambiaColor (color)*/
+	  	{
+			document.body.style.backgroundColor = color;
+	  	}
+
+	   function cambiarazul() {
+	  	var p;
+	  	/*Se puede hacer con document.body.style.backgroundColor ="Blue" para cambiar el fondo de la página*/
+	  	
+	  	p = document.getElementById("miNoticia");
+	  	p.style.backgroundColor ="blue";
+	  }
+
+	  function letrapequeña() {
+	  	var p;
+	  	p = document.getElementById("miNoticia");
+	  	p.style.fontSize ="20px";
+	  }
+
+
+	  function letramediana() {
+	  	var p;
+	  	p = document.getElementById("miNoticia");
+	  	p.style.fontSize ="40px";
+	  }
+
+	  function letragrande() {
+	  	var p;
+	  	p = document.getElementById("miNoticia");
+	  	p.style.fontSize ="60px";
+	  }
+</script>
+</head>
+<body>
+	<h1>Color fondo</h1>
+  <img id="rojo" src="imagenes/rojo.png" 
+     onclick="cambiarrojo()">
+ 
+  </img>
+
+  <img src="imagenes/verde.png" id="verde" 
+     onclick="cambiarverde()">
+   
+  </p>
+
+  <p id="azul" 
+     onclick="cambiarazul()/*cambiarColor('blue')*/">
+    Azul
+  </p>
+  		<h2>Tipo de letra</h2>
+
+  	<p id=pequeña 
+    	 onclick="letrapequeña()">
+    	Pequeña
+  	</p>
+
+  	<p id="mediana" 
+     	onclick="letramediana()">
+    	Mediana
+  	</p>
+
+  	<p id="grande" 
+    	onclick="letragrande()">
+    	Grande
+
+  	</p>
+  	<p id="miNoticia">
+  		Mañana llueve
+  	</p>
+
+
+
+
+</body>
+</html>

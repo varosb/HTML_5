@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi página con script</title>
+	<meta charset="utf-8">
+	<script type="text/javascript">
+
+	  function cambiarrojo() {
+	  	var p;
+	  	p = document.getElementById("rojo");
+	  	p.style.backgroundColor= "red";
+	  }
+
+	   function cambiarverde() {
+	  	var p;
+	  	p = document.getElementById("verde");
+	  	p.style.backgroundColor ="green";
+	  }
+
+	   function cambiarazul() {
+	  	var p;
+	  	p = document.getElementById("azul");
+	  	p.style.backgroundColor ="blue";
+	  }
+
+	  function letrapequeña() {
+	  	var p;
+	  	p = document.getElementById("pequeña");
+	  	p.style.fontSize ="20px";
+	  }
+
+
+	  function letramediana() {
+	  	var p;
+	  	p = document.getElementById("mediana");
+	  	p.style.fontSize ="40px";
+	  }
+
+	  function letragrande() {
+	  	var p;
+	  	p = document.getElementById("grande");
+	  	p.style.fontSize ="60px";
+	  }
+</script>
+</head>
+<body>
+	<h1>Color fondo</h1>
+  <p id="rojo" 
+     onclick="cambiarrojo()">
+    Rojo
+  </p>
+
+  <p id="verde" 
+     onclick="cambiarverde()">
+    Verde
+  </p>
+
+  <p id="azul" 
+     onclick="cambiarazul()">
+    Azul
+  </p>
+  		<h2>Tipo de letra</h2>
+
+  	<p id=pequeña 
+    	 onclick="letrapequeña()">
+    	Pequeña
+  	</p>
+
+  	<p id="mediana" 
+     	onclick="letramediana()">
+    	Mediana
+  	</p>
+
+  	<p id="grande" 
+    	onclick="letragrande()">
+    	Grande
+  	</p>
+
+
+
+
+</body>
+</html>
